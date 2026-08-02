@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kartify — Online Shopping</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-row">
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
+    <div class="logo" id="logoBtn">Kartify</div>
+    <div class="search-box">
+      <span class="search-icon">&#9906;</span>
+      <input type="text" id="searchInput" placeholder="Products khojo...">
+    </div>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">
+        &#9825;<span class="badge hidden" id="wishlistBadge">0</span>
+      </button>
+      <button class="icon-btn" id="cartBtn" aria-label="Cart">
+        &#128722;<span class="badge hidden" id="cartBadge">0</span>
+      </button>
+    </div>
+  </div>
+  <nav class="cat-strip" id="catStrip"></nav>
+</header>
+
+<main id="mainContent"></main>
+
+<footer class="site-footer">
+  <p>Kartify — demo storefront. Sabhi products fictional hain.</p>
+</footer>
+
+<!-- Cart drawer -->
+<div class="overlay hidden" id="cartOverlay">
+  <div class="drawer" id="cartDrawer"></div>
+</div>
+
+<div class="toast hidden" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
